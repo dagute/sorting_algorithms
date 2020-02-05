@@ -15,6 +15,8 @@ typedef struct listint_s
 	struct listint_s *prev;
 	struct listint_s *next;
 } listint_t;
+void swap_list(listint_t *tmp, listint_t *tmp2, listint_t **list);
+size_t list_size(listint_t *list);
 void cocktail_sort_list(listint_t **list);
 void shell_sort(int *array, size_t size);
 void swap(int *a, int *b);
