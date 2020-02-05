@@ -31,6 +31,7 @@ void cocktail_sort_list(listint_t **list)
 			}
 			aux = aux->next;
 		}
+		aux = aux->prev;
 		while (aux->prev != NULL)
 		{
 			if (aux->n < aux->prev->n)
