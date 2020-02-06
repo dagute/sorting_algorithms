@@ -34,7 +34,7 @@ int part_hoare(int *array, int beg, int end, size_t size)
 	int i = beg - 1;
 
 	do {
-		i++;
+		++i;
 		while (array[i] < pivot)
 		{
 			i++;
