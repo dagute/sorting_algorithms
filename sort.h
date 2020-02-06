@@ -15,6 +15,9 @@ typedef struct listint_s
 	struct listint_s *prev;
 	struct listint_s *next;
 } listint_t;
+void quick_sort_hoare(int *array, size_t size);
+int part_hoare(int *array, int beg, int end, size_t size);
+void counting_sort(int *array, size_t size);
 void swap_list(listint_t *tmp, listint_t *tmp2, listint_t **list);
 size_t list_size(listint_t *list);
 void cocktail_sort_list(listint_t **list);
