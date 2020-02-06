@@ -8,12 +8,7 @@
 void cocktail_sort_list(listint_t **list)
 {
 	listint_t *aux;
-	size_t size;
 	int s = 1;
-
-	size = list_size(*list);
-	if (size < 2)
-		return;
 
 	if (list == NULL || (*list)->next == NULL || *list == NULL)
 		return;
@@ -43,24 +38,6 @@ void cocktail_sort_list(listint_t **list)
 			aux = aux->prev;
 		}
 	}
-}
-/**
- * list_size - returns the size of a linked list
- * @list: linked list
- * Return: returns the size of a list
- */
-size_t list_size(listint_t *list)
-{
-	size_t size;
-	listint_t *aux;
-
-	aux = list;
-
-	for (size = 0; aux != NULL; ++size)
-	{
-		aux = aux->next;
-	}
-	return (size);
 }
 /**
  * swap_list - swap nodes in a doubly linked list
