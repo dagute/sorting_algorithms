@@ -33,9 +33,6 @@ int part_hoare(int *array, int beg, int end, size_t size)
 	int pivot = array[end];
 	int i = beg - 1;
 
-	if (array[i] == pivot && array[j] == pivot)
-		return (0);
-
 	do {
 		i++;
 		while (array[i] < pivot)
@@ -53,6 +50,8 @@ int part_hoare(int *array, int beg, int end, size_t size)
 		}
 	} while (i < j);
 	return (i);
+	if (array[i] == pivot && array[j] == pivot)
+		return (1);
 }
 /**
  * swap - swap two integers
