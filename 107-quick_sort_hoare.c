@@ -43,15 +43,13 @@ int part_hoare(int *array, int beg, int end, size_t size)
 		{
 			j--;
 		}
-		if (i < j)
+		if (i <= j)
 		{
 			swap(&array[i], &array[j]);
 			print_array(array, size);
 		}
 	} while (i < j);
 	return (i);
-	if (array[i] == pivot && array[j] == pivot)
-		return (1);
 }
 /**
  * swap - swap two integers
